@@ -8,7 +8,7 @@ services:
     volumes:
      - ./app1/dir1:/var/www/html/
     ports:
-     - "8081:80"
+     - "port1:80"
     command: /usr/sbin/apachectl -D FOREGROUND
   web2:
     build:
@@ -18,6 +18,6 @@ services:
     volumes:
      - ./app2/dir2:/var/www/html/
     ports:
-     - "8082:80"
+     - "port2:80"
     command: /usr/sbin/apachectl -D FOREGROUND
 
